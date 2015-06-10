@@ -2,495 +2,15 @@
 <title>
 Claire Y. Li
 </title>
-
+<?php include 'gallery.php';?>
 <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-	$("body").css("background-position", "-500px -1100px");
-	$( ".box" ).hide();
-	$( "#back_box" ).hide();
-	$("#caption").hide();
-	$(".tech_detail").hide();
-	
-	
-	
-    $("#close_layer").click(function(){
-		$( ".box" ).hide();
-		$( "#back_box" ).hide();
-		$( "#home" ).fadeIn( "slow", function() {
-		});
-    });
-	 
-	$(".x").click(function(){
-		$( ".box" ).hide();
-		$( "#back_box" ).hide();
-		$( "#home" ).fadeIn( "slow", function() {
-		});
-    });
-	
-
-    $("#awards").click(function(){
-		$( ".box" ).hide();
-		$( "#home" ).hide();
-        //$("body").css("background-position", "0px -50px");
-		$( "#awards_box" ).fadeIn( "slow", function() {
-			// Animation complete
-		});
-		
-		$( "#back_box" ).fadeIn( "slow", function() {
-			// Animation complete
-		});
-		
-    });
-	
-	$("#projects").click(function(){
-        //$("body").css("background-position", "-500px 0px");
-		$( ".box" ).hide();
-		$( "#home" ).hide();
-		$( "#projects_box" ).fadeIn( "slow", function() {
-			// Animation complete
-		});
-		$("#back_box").css("height", "650px");
-		$( "#back_box" ).fadeIn( "slow", function() {
-			// Animation complete
-		});
-	
-	});
-	
-	$("#skillset").click(function(){
-		$( ".box" ).hide();
-		$( "#home" ).hide();
-        $( "#skillset_box" ).fadeIn( "slow", function() {
-			// Animation complete
-		});
-		$( "#back_box" ).fadeIn( "slow", function() {
-			// Animation complete
-		});
-		$("#skillset_box").load("resume_reset.html");
-		
-		//$("body").css("background-position", "0px -300px");
-    });
-
-	$(".skillset_link").click(function(){
-		$( ".box" ).hide();
-		$( "#home" ).hide();
-        $( "#skillset_box" ).fadeIn( "slow", function() {
-			// Animation complete
-		});
-		$( "#back_box" ).fadeIn( "slow", function() {
-			// Animation complete
-		});
-		
-		//$("body").css("background-position", "0px -300px");
-    });
-	
-	$("#ux").click(function(){
-        $( ".box" ).hide();
-		$( "#home" ).hide();
-		$( "#ux_box" ).fadeIn( "slow", function() {
-			// Animation complete
-		});
-		$( "#back_box" ).fadeIn( "slow", function() {
-			// Animation complete
-		});
-		
-		//$("body").css("background-position", "-500px -1100px");
-    });
-	
-	$("#web").click(function(){
-        $( ".box" ).hide();
-		$( "#home" ).hide();
-		$( "#web_box" ).fadeIn( "slow", function() {
-			// Animation complete
-		});
-		$( "#back_box" ).fadeIn( "slow", function() {
-			// Animation complete
-		});
-		
-		//$("body").css("background-position", "-400px -200px");
-    });
-	
-	$("#portfolio").click(function(){
-        $( ".box" ).hide();
-		$( "#home" ).hide();
-		$( "#portfolio_box" ).fadeIn( "slow", function() {
-			// Animation complete
-		});
-		$( "#back_box" ).fadeIn( "slow", function() {
-			// Animation complete
-		});
-		
-		//$("body").css("background-position", "-200px 0px");
-    });
-	
-	$("#contact").click(function(){
-        $( ".box" ).hide();
-		$( "#home" ).hide();
-		$( "#contact_box" ).fadeIn( "slow", function() {
-			// Animation complete
-		});
-		$( "#back_box" ).fadeIn( "slow", function() {
-			// Animation complete
-		});
-		
-		//$("body").css("background-position", "-50px -400px");
-    });
-
-	$("#expand_resume").click(function(){
-		$("#skillset_box").css("height", "2100px");
-		$("#back_box").css("height", "2100px");
-		$("#skillset_box").load("resume.html");
-    });
-	
-	$("#close").click(function(){
-		$(".box").hide();
-		$("#back_box").hide();	
-		$( "#home" ).show();
-    });
-		
-	$(".return_tech").click(function(){
-		$(".tech_detail").hide();
-		$( "#grid" ).fadeIn( "slow", function() {
-		});
-		$("#projects_box").css("height", "90%");
-		$("#back_box").css("height", "650px");
-    });
-		
-	$(".bubble").click(function(){
-        $( "#grid" ).fadeOut();
-		
-		$(document).on('click', 'span', function () {
-			alert(this.id);
-		});
-		
-		if(this.id=="tech1") {
-			
-			$( "#tech1_detail" ).fadeIn( "slow", function() {
-			});
-		}
-		else if(this.id=="tech2") {
-			
-			$( "#tech2_detail" ).fadeIn( "slow", function() {
-			});
-		}
-		else if(this.id=="tech3") {
-			
-			$( "#tech3_detail" ).fadeIn( "slow", function() {
-			});
-			$("#projects_box").css("height", "700px");
-			$("#back_box").css("height", "700px");
-		}
-		else if(this.id=="tech4") {
-			
-			$( "#tech4_detail" ).fadeIn( "slow", function() {
-			});
-		}
-		else if(this.id=="tech5") {
-			
-			$( "#tech5_detail" ).fadeIn( "slow", function() {
-			});
-		}		
-		else if(this.id=="tech6") {
-			
-			$( "#tech6_detail" ).fadeIn( "slow", function() {
-			});
-			
-			$("#back_box").css("height", "1200px");
-		}
-		else if(this.id=="tech7") {
-			
-			$( "#tech7_detail" ).fadeIn( "slow", function() {
-			});
-		}		
-		else if(this.id=="tech8") {
-			
-			$( "#tech8_detail" ).fadeIn( "slow", function() {
-			});
-		}
-		
-		//$("body").css("background-position", "-500px -1100px");
-    });
-		
-});
-</script>
-
-<style>
-
-body{
-	background-image: url("star.png");
-	background-position: -500px -400px;
-	font-family: 'Roboto Condensed', sans-serif;
-	overflow: auto;
-	}
-
-h1{
-	font-family: 'Cookie', cursive;
-	font-size: 50px;
-	font-weight: 200;
-	margin-bottom: -0.5cm;
-	color: #000099;
-	
-}
-
-h2{
-	color: #E6CAE8;
-	font-size: 15px;
-	font-weight: 100;
-}
-
-h3{
-	color: #CAD0E8;
-	font-size: 15px;
-	font-weight: 150;
-}
-
-h4{
-	font-family: 'Cookie', cursive;
-	font-size: 35px;
-	font-weight: 200;
-	margin-bottom: -0.5cm;
-	color: #000099;
-}
-
-#links{
-	position: absolute;
-	left: 300px;
-	bottom: 20px;
-	height: 25px;
-}
-
-	.platform{
-		color: #006699;
-		width: 100px;
-		height: 30px;
-		z-index: 10;
-		border: 2px solid #FFFFFF;
-		font-family: Cookie;
-		font-weight: 500;
-		font-size: 22px;
-		align: center;
-		text-align: center;
-		vertical-align: middle;
-		line-height: 30px;
-		float: left;
-		margin-left: 10px;
-	}
-	
-	.platform:hover{
-		border: 2px solid #000099;
-	}
-	
-	.button{
-		color: #006699;
-		height: 30px;
-		z-index: 10;
-		border: 2px solid #FFFFFF;
-		font-family: Cookie;
-		font-weight: 500;
-		font-size: 22px;
-		align: center;
-		text-align: center;
-		vertical-align: middle;
-		line-height: 30px;
-		margin-left: 10px;
-		width: 200px;
-		float: center;
-	}
-	
-	.button:hover{
-		border: 2px solid #000099;
-	}
+<script src="gallery_actions.js"></script>
+<script src="link_actions.js"></script>
 
 
-	  #awards{
-		background-color: #BBF3F7;
-		
-
-	  }
-	  
-	  #projects{
-		background-color: #BBF3F7;
-		width: 170px;
-	  }
-	  
-	  #skillset{
-		background-color: #C3D3DF;
-		color: #003366;
-
-	  }
-	  
-	  #ux{
-		background-color: #C7C3D3;
-		width: 120px;
-		color: #003366;
-	  }
-	  
-	  #web{
-		background-color: #C9BBCD;
-		width: 90px;
-		color: #000066;
-	  }
-	  
-	  #portfolio{
-		background-color: #CEABC2;
-		color: #000066;		
-
-	  }
- 
- 	  #contact{
-		background-color: #FF99CC;
-		color: #000066;
-
-	  }
-	  
-	  #back_box{
-		border: 1px;
-		height: 90%;
-		width: 98%;
-		background-color: #FFFFFF;
-		z-index: 0;
-		position: absolute;
-		top: 10px;
-		left: 10px;
-		opacity: 0.80;
-	  }
-
-	  .box{
-		border: 1px;
-		height: 90%;
-		width: 98%;
-		z-index: 3;
-		position: absolute;
-		top: 10px;
-		left: 10px;
-		
-	  }
-	  
-	  #skillset_box{
-		border: 1px;
-		height: 90%;
-		width: 98%;
-		z-index: 3;
-		position: absolute;
-		top: 10px;
-		left: 10px;
-	  }
-	  
-	  
-	.award_circle {
-		width: 300px;
-		height: 300px;
-		border-radius: 150px;
-		-webkit-border-radius: 150px;
-		-moz-border-radius: 150px;
-		float: left;
-		margin-left: 5px;
-		margin-right: 5px;
-	
-	}
-
-
-	.bubble {
-		width: 180px;
-		height: 180px;
-		border-radius: 30px;
-		-webkit-border-radius: 30px;
-		-moz-border-radius: 30px;
-		margin-left: 5px;
-		margin-right: 5px;
-		position: relative;
-		text-align: center;
-	}
-
-	#tech1{
-		background: url('drone1.jpg') no-repeat;
-		background-size: 300px 300px;
-		background-position: -30px -40px;
-	}
-
-	#tech2{
-		background: url('foundet.jpg') no-repeat;
-		background-position: -260px -40px;
-	}
-	
-	#tech3{
-		background: url('permit.png') no-repeat;
-		background-position: -300px -150px;
-	}
-	
-	#tech4{
-		background: url('rivharvest.jpg') no-repeat;
-		background-position: -200px -150px;
-	}
-	
-	#tech5{
-		background: url('rivharvest.jpg') no-repeat;
-	}
-	
-	#tech6{
-		background: url('crop.jpg') no-repeat;
-		background-position: 0px -40px;
-	}
-		#tech7{
-		background: url('rivharvest.jpg') no-repeat;
-	}
-	
-	#tech8{
-		background: url('duck.png') no-repeat;
-		background-position: -10px -10px;
-	}
-	
-	#rest{
-		margin-left: 10px;
-		width: 60%;
-		font-size: 15px;
-	}
-	
-	
-	#riv{
-		background: url('rivharvest.jpg') no-repeat;
-	}
-	
-	#close_layer{
-		position: absolute;
-		top: 0px;
-		left: 0px;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
-	}
-	
-	.x{
-		position: relative;
-		float: right;
-		font-family: 'Verdana';
-		font-size: 25px;
-		width: 30px;
-		height: 30px;
-		border-style: solid;
-		border-color: #0000ff;
-		border-radius: 150px;
-		-webkit-border-radius: 150px;
-		-moz-border-radius: 150px;
-		margin-top: 8px;
-		margin-right: 8px;
-		color: blue;
-		 border-width: 1px;
-	}
-	
-	.x:hover{
-		border-color: white;
-		color: white;
-	}
-	
-	#tech_table td{
-		width: 230px;
-		align: center;
-	}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 
@@ -515,31 +35,20 @@ I like doing things the hard way. I love building things from the ground up, and
 
 Other stuff...I really like robots, and hackathons. 
 <p>
-
-<?php
-$dir = "portfolio/";
-
-// Open a directory, and read its contents
-if (is_dir($dir)){
-  if ($dh = opendir($dir)){
-    while (($file = readdir($dh)) !== false){
-      echo "filename:" . $file . "<br>";
-    }
-    closedir($dh);
-  }
-}
-//echo "HI THERE";
-?>
-
 <a class="skillset_link">My resume is available here.</a></font>
 </div>
+
+
+
 </div>
 
 <div id="links">
+
+	<div id="spacer">&nbsp;</div>
   <div id="awards" class="platform">awards</div>
   <div id="projects" class="platform">engineering projects</div>
   <div id="skillset" class="platform">skillset</div>
-  <div id="ux" class="platform">graphics</div>
+  <div id="graphic" class="platform">graphics</div>
   <div id="web" class="platform">web dev</div>
   <div id="portfolio" class="platform">portfolio</div>
   <div id="contact" class="platform">contact</div>
@@ -614,11 +123,20 @@ Blog<br>
 </td></tr></table>
 </div>
 
-<div id="ux_box" class="box">
+<div id="graphic_box" class="box">
  <div class="x">
  X 
  </div>
 <h1>User Experience & Graphic Design</h1>
+<p>
+
+<?php
+
+$dir='graphic/';
+$origin = generate_gallery($dir);
+
+?>
+
 </div>
 
 <div id="web_box" class="box">
@@ -626,6 +144,14 @@ Blog<br>
  X 
  </div>
 <h1>Web Development</h1>
+<p>
+<?php
+
+$dir='web/';
+$origin = generate_gallery($dir);
+
+?>
+
 </div>
 
 <div id="portfolio_box" class="box">
@@ -638,9 +164,18 @@ Anything graphic design related is under "Graphics"<br>
 All web development projects are under "Web Dev"<p>
 
 The remainder of this section is for my traditional artwork, and fashion design.
+<p>
+<?php
 
+$port='portfolio/';
+generate_gallery($port);
 
+?>
 
+</div>
+
+<div id="canvas">
+&nbsp;
 </div>
 
 <div id="projects_box" class="box">
@@ -878,6 +413,8 @@ Javascript, jQuery
 <table>
 <tr>
 <td width="650px"><img src="duck.png" border="1">
+<p>
+<a href="duckgame/main.html">Play This Game!</a>
 <h4><p class="return_tech" align="center">Return</p></h4>
 </td>
 <td width="400px">

@@ -1,0 +1,342 @@
+body{
+	background-image: url("star.png");
+	background-position: -500px -400px;
+	font-family: 'Roboto Condensed', sans-serif;
+	overflow-x: hidden;
+	}
+
+h1{
+	font-family: 'Cookie', cursive;
+	font-size: 50px;
+	font-weight: 200;
+	margin-bottom: -0.5cm;
+	color: #000099;
+	
+}
+
+h2{
+	color: #E6CAE8;
+	font-size: 15px;
+	font-weight: 100;
+}
+
+h3{
+	color: #CAD0E8;
+	font-size: 15px;
+	font-weight: 150;
+}
+
+h4{
+	font-family: 'Cookie', cursive;
+	font-size: 35px;
+	font-weight: 200;
+	margin-bottom: -0.5cm;
+	color: #000099;
+}
+
+#links{
+	position: absolute;
+	left: 0%;
+	bottom: 20px;
+	height: 25px;
+	width: 100%;
+}
+
+	.platform{
+		color: #006699;
+		width: 100px;
+		height: 30px;
+		z-index: 10;
+		border: 2px solid #FFFFFF;
+		font-family: Cookie;
+		font-weight: 500;
+		font-size: 22px;
+		align: center;
+		text-align: center;
+		vertical-align: middle;
+		line-height: 30px;
+		margin-left: 10px;
+		float: left;
+	}
+	
+	.platform:hover{
+		border: 2px solid #000099;
+	}
+	
+	.button{
+		color: #006699;
+		height: 30px;
+		z-index: 10;
+		border: 2px solid #FFFFFF;
+		font-family: Cookie;
+		font-weight: 500;
+		font-size: 22px;
+		align: center;
+		text-align: center;
+		vertical-align: middle;
+		line-height: 30px;
+		margin-left: 10px;
+		width: 200px;
+		float: center;
+	}
+	
+	.button:hover{
+		border: 2px solid #000099;
+	}
+
+
+	  #awards{
+		background-color: #BBF3F7;
+		
+
+	  }
+	  
+	  #projects{
+		background-color: #BBF3F7;
+		width: 170px;
+	  }
+	  
+	  #skillset{
+		background-color: #C3D3DF;
+		color: #003366;
+
+	  }
+	  
+	  #graphic{
+		background-color: #C7C3D3;
+		width: 120px;
+		color: #003366;
+	  }
+	  
+	  #web{
+		background-color: #C9BBCD;
+		width: 90px;
+		color: #000066;
+	  }
+	  
+	  #portfolio{
+		background-color: #CEABC2;
+		color: #000066;		
+
+	  }
+ 
+ 	  #contact{
+		background-color: #FF99CC;
+		color: #000066;
+
+	  }
+	  
+	  #back_box{
+		border: 1px;
+		min-height: 90%;
+		width: 98%;
+		background-color: #FFFFFF;
+		z-index: 0;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		opacity: 0.80;
+	  }
+
+	  .box{
+		border: 1px;
+		height: 90%;
+		width: 98%;
+		z-index: 3;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		
+	  }
+	  
+	  #skillset_box{
+		border: 1px;
+		height: 90%;
+		width: 98%;
+		z-index: 3;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	  }
+	  
+	  
+	.award_circle {
+		width: 300px;
+		height: 300px;
+		border-radius: 150px;
+		-webkit-border-radius: 150px;
+		-moz-border-radius: 150px;
+		float: left;
+		margin-left: 5px;
+		margin-right: 5px;
+	
+	}
+
+
+	.bubble {
+		width: 180px;
+		height: 180px;
+		border-radius: 30px;
+		-webkit-border-radius: 30px;
+		-moz-border-radius: 30px;
+		margin-left: 5px;
+		margin-right: 5px;
+		position: relative;
+		text-align: center;
+	}
+
+	#tech1{
+		background: url('drone1.jpg') no-repeat;
+		background-size: 300px 300px;
+		background-position: -30px -40px;
+	}
+
+	#tech2{
+		background: url('foundet.jpg') no-repeat;
+		background-position: -260px -40px;
+	}
+	
+	#tech3{
+		background: url('permit.png') no-repeat;
+		background-position: -300px -150px;
+	}
+	
+	#tech4{
+		background: url('rivharvest.jpg') no-repeat;
+		background-position: -200px -150px;
+	}
+	
+	#tech5{
+		background: url('rivharvest.jpg') no-repeat;
+	}
+	
+	#tech6{
+		background: url('crop.jpg') no-repeat;
+		background-position: 0px -40px;
+	}
+		#tech7{
+		background: url('rivharvest.jpg') no-repeat;
+	}
+	
+	#tech8{
+		background: url('duck.png') no-repeat;
+		background-position: -10px -10px;
+	}
+	
+	#rest{
+		margin-left: 10px;
+		width: 60%;
+		font-size: 15px;
+	}
+	
+	#spacer{
+		color: #006699;
+		height: 30px;
+		z-index: 10;
+		border: 0px solid #FFFFFF;
+		font-family: Cookie;
+		font-weight: 500;
+		font-size: 22px;
+		align: center;
+		text-align: center;
+		vertical-align: middle;
+		line-height: 30px;
+		float: left;
+		width: 600px;
+	}
+	
+	#riv{
+		background: url('rivharvest.jpg') no-repeat;
+	}
+	
+	#close_layer{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+	
+	.x{
+		position: relative;
+		float: right;
+		font-family: 'Verdana';
+		font-size: 25px;
+		width: 30px;
+		height: 30px;
+		border-style: solid;
+		border-color: #0000ff;
+		border-radius: 150px;
+		-webkit-border-radius: 150px;
+		-moz-border-radius: 150px;
+		margin-top: 8px;
+		margin-right: 8px;
+		color: blue;
+		 border-width: 1px;
+	}
+	
+	.x:hover{
+		border-color: white;
+		color: white;
+	}
+	
+	.x_gallery{
+		position: relative;
+		float: right;
+		font-family: 'Verdana';
+		font-size: 25px;
+		width: 30px;
+		height: 30px;
+		border-style: solid;
+		border-color: #0000ff;
+		border-radius: 150px;
+		-webkit-border-radius: 150px;
+		-moz-border-radius: 150px;
+		margin-top: 8px;
+		margin-right: 8px;
+		color: blue;
+		 border-width: 1px;
+	}
+	
+	.x_gallery:hover{
+		border-color: white;
+		color: white;
+	}
+	
+	#tech_table td{
+		width: 230px;
+		align: center;
+	}
+	
+	#canvas{
+		background-color: #000000;
+		opacity: 0.9;
+		min-height: 100%;
+	}
+	
+	.full_img{
+		margin: 10px;
+	}
+	
+	.thumbnail{
+	
+		width: 100px;
+		height: 100px;
+		margin: 5px;
+		border-style: solid;
+		border-width: 1px;
+		background-size: 150px auto;
+	
+	}
+	
+	.thumbnail_web{
+	
+		width: 200px;
+		height: 200px;
+		margin: 5px;
+		border-style: solid;
+		border-width: 1px;
+		background-size: 400px auto;
+	
+	}
